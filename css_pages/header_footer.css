@@ -1,0 +1,264 @@
+::-webkit-scrollbar {display: none;}
+
+iframe {
+  overflow: hidden;
+  border:none;
+  margin: 0;
+}
+
+body{
+
+	font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+}
+
+.topnav {
+
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  padding: 10px;
+  background-color: #001036;
+
+}
+.topnav li {
+  list-style: none;
+  display: inline;
+
+}
+
+.topnav .link:hover {
+
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+
+.topnav .link,.active {
+ 
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1% ;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.icon{
+  position: absolute;
+  top: 3.5%;
+  padding-top: 2.5px;
+}
+
+.icon:hover{
+opacity: 0.7;
+}
+
+.logo {
+  font-size: 34px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 3%;
+  padding-left: 8%;
+
+ }
+
+.logo:hover{
+  opacity: 0.7;
+}
+
+
+.fa {
+  padding-top: 0.7%;
+  padding-right: auto;
+  padding-left: auto;
+  padding-bottom: 0.7%;
+  font-size: 32px;
+  width: 2.5%;
+  text-align: center;
+  text-decoration: none;
+  margin: 6px 6px;
+  border-radius: 50%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: white ;
+  color: #3B5998;
+ 
+}
+
+.fa-twitter {
+  background:white;
+  color:  #55ACEE;
+  
+
+}
+
+.fa-instagram {
+  background: white;
+  color: black;
+  
+}
+
+
+
+ .footer {
+   
+   width: 100%;
+   background-color: #001036;
+   padding-left:0 ;
+   padding-top: 1%;
+   color: white;
+}
+
+
+.social img {
+   padding-right: 1.5%;
+}
+.social a :hover {
+  opacity: 0.7;
+}
+
+.column1 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 300px;
+}
+
+.column2 {
+  float: right;
+  width: 45%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#footericon {
+   list-style: none;
+}
+
+#footericon li a {
+  text-decoration: none;
+  color:white ;
+  padding-top: 1%;
+  font-size: 50px;
+ }
+
+
+#footericon li a:hover {
+ opacity: 0.7;
+ }
+
+
+ #footericon li{
+ display: inline;
+}
+
+#footertext {
+ 
+ list-style: none;
+}
+ #footertext li a {
+ text-decoration: none;
+  color:white ;
+  padding-top: 1%;
+ 
+}
+
+
+#footertext li{
+ padding-bottom:1%;
+}
+
+
+.bottomnav {
+
+  width: 100%;
+  padding-left:0.5% ;
+  padding-top: 0.5%;
+  padding-bottom: 0.8%;
+
+}
+
+.coppyright {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+
+ }
+
+ .slc{
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+ }
+
+ .smap{ 
+  font-size: 20px;
+  color: black;
+  border-width: 2px ;
+  border-style: solid;
+  border-color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 17% ;
+  transition: 300ms;
+  padding: 0.25% 1.25%;
+  
+ }
+
+ .bottomnav .smap:hover{
+  color: #001036;
+  color: #001036;
+  border-color: black;
+  border-radius: 20px;
+  padding: 0.25% 1.25%;
+
+ }
+
+ .edit{
+
+  font-size: 20px;
+  color: black;
+  border-width: 2px ;
+  border-style: solid;
+  border-color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 15%;
+  padding: 0.25% 1.25%;
+  transition: 300ms;
+  
+
+ }
+ 
+
+  .bottomnav .edit:hover{
+  color: #001036;
+  border-width: 2px ;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  padding: 0.25% 1.25%;
+
+ }

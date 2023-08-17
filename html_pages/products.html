@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mr.Cricket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Copse&family=Open+Sans&family=Poppins:wght@500&family=Roboto+Slab:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_pages/products.css">
+</head>
+
+<body>
+
+    <div id="shop">
+
+        <p id="store-title">Welcome to Mr.Cricket Store</p>
+
+        <p id="total">Total: Rs.0</p>
+
+        <div class="product-card">
+            <div class="top">
+                <img src="../photos/shop/black_mug.png" alt="card image">
+                <p class="product-title">Mr.Cricket Mug</p>
+                <li>Colourful Mr.Cricket logo printed on both sides</li>
+                <li>Black,glossy ceramic Mug</li>
+                <li>Dishwasher and Microwave safe</li>
+            </div>
+
+            <div class="bottom">
+                <p class="card-button plus">+</p>
+                <p class="card-button quantity">0</p>
+                <p class="card-button minus">-</p>
+                <p class="cost">Rs.850.00</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="top">
+                <img src="../photos/shop/cap.png" alt="card image">
+                <p class="product-title">Mr.Cricket Cap</p>
+                <li>White Cap with Mr.Cricket logo</li>
+                <li>Cotten Feel(Not Waterproof)</li>
+                <li>Unisex Cap</li>
+            </div>
+
+            <div class="bottom">
+                <p class="card-button plus">+</p>
+                <p class="card-button quantity">0</p>
+                <p class="card-button minus">-</p>
+                <p class="cost">Rs.1000.00</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="product-card">
+            <div class="top">
+                <img src="../photos/shop/bottle.png" alt="card image">
+                <p class="product-title">Mr.Cricket Water Bottle</p>
+                <li>Vin Rouge colour themed Water Bottle with Mr.Cricket logo</li>
+                <li>Stainless steel (Lead Free)</li>
+                <li>With a double-walled container inside</li>
+            </div>
+
+            <div class="bottom">
+                <p class="card-button plus">+</p>
+                <p class="card-button quantity">0</p>
+                <p class="card-button minus">-</p>
+                <p class="cost">Rs.1200.00</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="top">
+                <img src="../photos/shop/hoodie.png" alt="card image">
+                <p class="product-title">Mr.Cricket Hoodie</p>
+                <li>Black Hoodie with Mr.Cricket logo</li>
+                <li>Includes 2 pockets</li>
+                <li>Includes drawstring at neck</li>    
+            </div>
+
+            <div class="bottom">
+                <p class="card-button plus">+</p>
+                <p class="card-button quantity">0</p>
+                <p class="card-button minus">-</p>
+                <p class="cost">Rs.1650.00</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <form name="products">
+                <div>
+                    <p class="card-title">Personal Details</p>
+
+                    <label for="first">Name: </label><br>
+                    <input class="box-size" type="text" name="first" size="20" maxlength="20" placeholder="First" id="first">
+                    <input class="box-size" type="text" name="last" size="20" maxlength="20" placeholder="Last" id="last">
+                    <br><br>
+
+                    <label for="email">E-mail address: </label><br>
+                    <input class="box-size" type="email" name="email" size="30" maxlength="30" placeholder="Email" id="email"><br><br>
+
+                    <label for="telephone">Telephone Numbers: </label><br>
+                    <input class="box-size" type="tel" name="telephone1">
+                    <input class="box-size" type="tel" name="telephone2"><br><br>
+                    <br><br>
+                </div>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+                <div class="address">
+                    <p class="card-title">Shipping Address: </p><br>
+                    <input class="box-size" type="text" name="line1" size="30" maxlength="30" placeholder="Address Line 1" id="line1"><br><br><br>
+                    <input class="box-size" type="text" name="line2" size="30" maxlength="30" placeholder="Address Line 2" id="line2"><br><br><br>
+                    <input class="box-size" type="text" name="line3" size="30" maxlength="30" placeholder="Address Line 3" id="line3"><br><br><br>
+                </div>
+                <br>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+                <div>
+                    <p class="card-title">Payment Details</p>
+
+                    <label for="paymentmode">Mode of Payment: </label><br>
+                    <div class="radio1">
+                        <input type="radio" name="mode" id="cash" value="cash">
+                        <label class="radio-txt" for="cash"> Cash on Delivery </label>
+                    </div>
+
+                    <div class="radio2">
+                        <input type="radio" name="mode" id="card" value="card" checked>
+                        <label class="radio-txt" for="cash"> Debit/Credit Card </label>
+                    </div>
+                    <br><br>
+
+                    <p class="delivery-txt">Choose your preferred Delivery Period:</p>
+                    <label class="period" for="from">From: </label>
+                    <label class="period to" for="to">To: </label><br>
+                    <input class="box-size" type="date" name="from" id="from">
+                    <input class="box-size" type="date" name="to" id="to"> <br><br>
+
+                    <div id="cardrequired">
+                        <div id="bank">
+                            <label for="accnum">Account number: </label>
+                            <label for="expiry">Expiry Date: </label>
+                            <label for="cvv">CVV: </label><br>
+                        </div>
+
+                        <div class="bank">
+                            <input type="number" name="accnum" size="20" maxlength="20" id="accnum">
+                            <input  type="month" name="expiry" id="expiry">
+                            <input  type="number" name="cvv" min="000" max="999" id="cvv"><br>
+                        </div>
+                    </div>
+                    <br>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+                    <label for="notes">Order Notes: </label><br>
+                    <textarea name="notes" id="Account Number"></textarea><br><br>
+                </div>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+               <span class="indent"> <b>Every customer is entitled to read the following conditions:</b><hr id="hrmargin">
+
+                <p class="conditions">Upon browsing our products and you find something you would like to purchase
+                ,select what you need.Wait for our response for you.We'll update you on the
+                progress of your order via Emails and texts.Payment must be made w/in 2 days
+                from after filling up the order form.</p></span><br>
+
+                <div class="warning">
+                    <i class="fa fa-warning"></i>
+                All cancelled or unattended orders will be placed in the banned list and
+                will be blocked to avoid future inconvenience.</div><br>
+    <!------------------------------------------------------------------------------------------------------------->
+
+                <div class="down">
+                    <input type="checkbox" name="terms" value="" id="terms">
+                    <label id="policy" for="terms">I have read and understood the Privacy Policy of Mr.Cricket and I accept all
+                    the <a href="termsnconditions.html">Terms and conditions</a>.</label>
+                </div><br>
+
+                <div id="button-row">
+                    <input class="btn" type="reset" name="reset" value="Reset Form">
+                    <button class="btn" id="hidesubmit" value="'check validy" disabled>Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------->
+
+    <div id="summery">
+        <p id="summery-title">Order Summery</p>
+        <img src="../photos/shop/summery.png" id="summery-img">
+
+        <form name="summery">
+            <label class="summery-txt">Name:</label>
+            <input type="text" name="name" readonly>
+
+            <label class="summery-txt">Email:</label>
+            <input type="text" name="email" readonly><br>
+
+        </form>
+
+        <p id="invoice-title">Invoice Details</p>
+        <hr>
+
+        <div class="summeryitem">
+            <img src="../photos/shop/black_mug.png" class="summery-img">
+            <div class="detail-card">
+                <p class="item-name">Mr.Cricket Mug</p>
+                <div class="product-info">
+                    <p class="summeryquantity">Quantity: 2</p>
+                    <p class="summerycost">Price: Rs.20</p>
+                </div>
+            </div>
+        </div>
+        <div class="summeryitem">
+            <img src="../photos/shop/cap.png" class="summery-img">
+            <div class="detail-card">
+                <p class="item-name">Mr.Cricket Cap</p>
+                <div class="product-info">
+                    <p class="summeryquantity">Quantity: 2</p>
+                    <p class="summerycost">Price: Rs.20</p>
+                </div>
+            </div>
+        </div>
+        <div class="summeryitem">
+            <img src="../photos/shop/bottle.png" class="summery-img">
+            <div class="detail-card">
+                <p class="item-name">Mr.Cricket Water Bottle</p>
+                <div class="product-info">
+                    <p class="summeryquantity">Quantity: 2</p>
+                    <p class="summerycost">Price: Rs.20</p>
+                </div>
+            </div>
+        </div>
+        <div class="summeryitem">
+            <img src="../photos/shop/hoodie.png" class="summery-img">
+            <div class="detail-card">
+                <p class="item-name">Mr.Cricket Hoodie</p>
+                <div class="product-info">
+                    <p class="summeryquantity">Quantity: 2</p>
+                    <p class="summerycost">Price: Rs.20</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="total-bill">
+            <p id="bill">Total Bill</p>
+            <p id="summery-total">Rs.0</p>
+        </div>
+    </div>
+    <div class="editpage">
+            <a href="chamelee.html"><img src="../photos/About_us/editor.jpg"alt="Page editor icon" width="125px" height="125px"></a>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d3e6622f3d.js" crossorigin="anonymous"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>

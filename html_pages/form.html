@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Query page</title>
+  <link rel="stylesheet" type="text/css" href="../css_pages/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- Body Part -->
+<body >
+  <!--Banner image  -->
+  <img src="../photos/form/5a9735f5833c4.jpeg" alt="contact us cover image" width="100%">
+  <br><br><br>
+
+  <!-- Text part -->
+  <p align="center">If you have any problems about our services, You can contact us on our official facebook page. </p>
+  <p align="center">Need some help?  Call us on +94714465489</p>
+ <div id="boxA">
+        <!-- Form  Box -->
+          <div class="boxB">
+              <h1>Contact US</h1>
+          
+          <!-- Confermation Box -->
+          <div class="xbox">
+              <div>
+                    <h2>Confirmation</h2>
+                    <div id="details" class="details"></div>
+          </div>
+          <div id="confirm">
+            <table>
+                <tr>
+                  <td><a class="button2" id="editBtn" onclick="editIt()">Edit</a></td>
+                  <td><a class="button2" id="sendBtn" onclick="sendIt()">Send</a></td>
+                </tr>
+            </table>
+              </div>
+          </div>
+            
+            <div class="xbox">
+                <h2 >Message Sent</h2>
+                <div class="details" style="margin-top: 8px;">Thank You!</div>
+                <a class="button2" id="okBtn" onclick="okButton()" style="margin-top: 40px;">OK</a>
+            </div>
+             
+             <!-- Query form part -->
+              <form action="mailto:maneesha.20200490@iit.ac.lk" method="post" id="form" class="form" onsubmit="return validation()">
+                  <label>Full Name</label>
+                  <div class="field">
+                      <input type="text" placeholder="Enter Your First Name & Last Name" id="name">
+                      <div class="error"></div>
+
+                  </div>
+
+                  <label>Email Address</label>
+                  <div class="field">
+                      <input type="text" placeholder="Enter Your Email" id="email" class="">
+                      <div class="error"></div>
+
+                  </div>
+
+                  <label>Problem Type</label>
+                  <div class="field">
+                      <select id="subject">
+                          <option value="default" disabled selected hidden>Choose Your Problem Type From Here...</option>
+                          <option value="Ticket bookings">Ticket bookings</option>
+                          <option value="Upcomming Tours ">Upcomming Tours</option>
+                          <option value="Shop Items">Shop Items</option>
+                          <option value="Others">Others</option>
+                      </select>
+                      <div class="error"></div>
+
+                  </div>
+
+                  <label>Your Problem</label>
+                  <div class="field">
+                      <textarea id="message" placeholder="Enter Your Problem Here...." class=""></textarea>
+                      <div class="error"></div>
+
+                  </div>
+                  <div class="button3">
+                      <button type="submit" id="subBt">View Your Query </button>
+                  </div>
+              </form>
+              <!-- End query form part -->
+
+                           
+            </div>
+         </div>
+<!-- Page edditor image -->
+<div class="editpage">
+  <a href="Maneesha.html"><img src="../photos/About_us/editor.jpg"alt="Page editor icon" width="125px" height="125px"></a>
+</div>
+
+<!-- Java Script Part -->
+<script type="text/javascript">
+  var xbox = document.getElementsByClassName("xbox");
+  var form = document.getElementById("form");
+  var details = document.getElementById("details");
+  var editButton = document.getElementById("editBtn");
+  var sendButton = document.getElementById("sendBtn");
+  var editButton = document.getElementById("okBtn");
+  var text;
+
+
+function validation(){
+  
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  var errMessage = document.getElementsByClassName("error");
+  var mailformat = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+  
+  
+  var isNameValid;
+  
+    if (name == '' || name.length < 3){
+        text = "*Please enter Your Name";
+        errordisplay(0,errMessage,text);
+    isNameValid = false;
+    }else{
+        errorOut(0,errMessage);
+    isNameValid = true;
+    }
+  
+  
+  
+  var isEmailValid;
+  
+    if (!email.match(mailformat)){
+        text = "*Please enter a valid email address";
+        errordisplay(1,errMessage,text);
+    isEmailValid = false;
+    }else{
+        errorOut(1,errMessage);
+    isEmailValid = true;
+    }
+  
+  
+  
+  var isSubjectValid;
+  
+    if (subject == 'default'){
+        text = "*Please select a problem.";
+        errordisplay(2,errMessage,text);
+    isubjectValid = false;
+    }else{
+        errorOut(2,errMessage);
+    isSubjectValid = true;
+    }
+  
+  
+  
+  var isMessageValid;
+  
+    if (message == '' || message.length < 5){
+        text = "*Message required.";
+        errordisplay(3,errMessage,text);
+    isMessageValid = false;
+    }else{
+        errorOut(3,errMessage);
+    isMessageValid = true;
+    }
+  
+  
+  
+  if(isNameValid == true && isEmailValid == true && isSubjectValid == true && isMessageValid == true){
+    
+    form.classList.add("form-hide");
+    xbox[0].classList.add("xbox-show", "popup");
+    
+    
+    details.innerHTML = "Name &nbsp;&emsp;&emsp; &emsp; &emsp; : &nbsp;&nbsp;&nbsp;" + name + "<br><br>Email Address &emsp;&nbsp; : &nbsp;" + email + "<br><br>Problem Type &emsp; &nbsp; : &nbsp;&nbsp;" + subject + "<br><br>Your Problem &nbsp;&nbsp;&nbsp; &nbsp; : <br>&emsp;&nbsp;" + message;
+    
+    return false;
+    
+  }
+  return false;
+
+  }
+
+  function errordisplay(i,errMessage,text){
+      errMessage[i].style.paddingBottom = "2px";
+      errMessage[i].innerHTML = text;
+      document.getElementsByClassName("field")[i].style.marginBottom = "5px";
+      alert(text);
+      
+  }
+
+  function errorOut(i,errMessage){
+      errMessage[i].style.paddingBottom = "0px";
+      errMessage[i].innerHTML = '';
+      document.getElementsByClassName("field")[i].style.marginBottom = "15px";
+  }
+
+  function editIt(){  
+    form.classList.remove("form-hide");
+    xbox[0].classList.remove("xbox-show", "popup");
+  }
+
+  function sendIt(){
+    xbox[0].classList.remove("xbox-show", "popup");
+    xbox[1].classList.add("xbox-show", "popup");
+  }
+
+  function okButton(){
+    xbox[1].classList.remove("xbox-show", "popup");
+    form.classList.remove("form-hide");
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "default";
+    document.getElementById("message").value = "";
+  }
+
+ </script>
+ <!-- End java sript part -->
+</body>
+</html>

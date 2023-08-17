@@ -1,0 +1,33 @@
+body{
+    background-color: #a5e2ef;
+    font-family: sans-serif;
+    padding: 40px;
+    margin: 40px;
+}
+
+.main-title{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p{
+  text-align: justify;
+  margin-left: 40px;
+}
+
+h2{
+    margin-left: 30px;
+    list-style-type: decimal;
+    display: list-item;
+}
+
+li{
+    margin-left: 80px;
+}
+
+hr{
+    size:5px;
+    color:black
+}

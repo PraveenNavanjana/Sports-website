@@ -1,0 +1,243 @@
+::-webkit-scrollbar {display: none;}
+
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+ 
+
+}
+body p {
+  font-size: 28px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column1{
+  float: left;
+  width: 30%;
+  padding: 2%;
+  height: 400px;
+  padding-top: 3.5%;
+}
+
+.imgdiv{
+
+    border: 2px solid #001036 ;
+    border-radius: 30px;
+    margin-top: 100px;
+
+}
+
+
+#boxA{
+  min-height: 755px;
+  width: 55%;
+  margin: 5% auto 10% auto;
+  border-style: solid;
+  border-color: #2FA4FF;
+  border-radius: 10px;
+  float: left;
+  margin-left: 3%;
+  background-color: #f1f1f1;
+  margin-left: 25%;
+
+}
+
+.boxB{
+  background: transparent;
+  min-height: 600px;a
+  width: 50%;
+}
+
+.boxB h1{
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 40px; 
+}
+
+.boxB .xbox{
+  display: none;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.boxB .xbox-show{
+  display: block;
+}
+
+.boxB .form{
+  display: block;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.boxB .form-hide{
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.boxB .field{
+  margin-bottom: 15px;
+}
+
+.boxB .field input,
+.boxB .field select,
+.boxB textarea{
+  width: 55%;
+  border: solid 3px #2FA4FF;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 1.5%;
+  padding: 10px;
+}
+
+.boxB textarea{
+  height: 130px;
+  resize: none;
+}
+
+.boxB .button3 button[type="submit"]{
+  border: solid 3px #fff;
+  border-radius: 25px;
+  margin-top: 5px;
+  margin-top: 1%;
+  padding: 15px;
+  width: 35%;
+  background: #2FA4FF;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.boxB .button3 button[type="submit"]:hover{
+  border: solid 3px #001036;
+  color: #001036;
+}
+
+.boxB .button3 button[type="submit"]:active{
+  border: solid 3px #001036;
+  color: #001036;
+}
+
+.button2{
+    outline: none;
+    display: block;
+    border:solid 1px transparent;
+    border-radius: 30px;
+    background: ;
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    color: #001036;
+}
+
+.button2:hover,
+.button2:focus{
+    border:solid 1px #001036;
+    background: transparent;
+    color: #001036;
+}
+
+.button2:active{
+    border: solid 1px #000;
+    background: #001036;
+    color: #000;
+}
+
+.boxB .error{
+  margin-top: 2px;
+  padding: 0px;
+  font-size: 13px;
+  text-align: left;
+  margin-left: 13%;
+  color: #d50000;
+  transition: all 0.5s ease;
+}
+
+.boxB .popup{
+  width: 450px;
+  min-height: 200px;
+  margin: auto;
+  border-radius: 20PX;
+  padding: 25px;
+  background: #fff;
+}
+
+.boxB .popup h2{
+  margin: auto;
+  font-size: 30px;
+  color: #001036;
+}
+
+.popup .details{
+  margin: 20px 0 0;
+/*  line-height: 170%;*/
+  text-align: left;
+  font-size: 15px;
+  color: #001036;
+}
+
+.boxB #confirm{
+  min-height: 60px;
+  margin-top: 15px;
+}
+
+.boxB #confirm table{
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.boxB #confirm table td{
+  padding:  0 20px;
+}
+
+.boxB #confirm a{
+  margin: auto;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.boxB .popuphide{
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+.editpage {
+  position: relative;
+  text-align-last: right;
+  right: 3%;
+  top: 3vh;
+  margin-top: 1000px;
+}
+
+.editpage img{
+  position: relative;
+  margin: 0px;
+  text-align-last: right;
+  right: 1%;
+}
+
+
+.editpage img:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,86 @@
+::-webkit-scrollbar {display: none;}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+/*  background-color:#28282B;*/
+  color: black;
+}
+body>div{
+    min-height: 100vh;
+    display: flex;
+    
+}
+.table_responsive {
+    max-width: 1500px;
+    border: 1px solid #051367;
+    background-color: #efefef33;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    font-size: 20px;
+    color: #444;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+table>thead {
+    background-color: #D3DEDC;
+    color: black;
+}
+table>thead th {
+    padding: 15px;
+}
+table th,
+table td {
+    border: 1px solid #00000017;
+    padding: 15px 15px;
+}
+table>tbody>tr>td>img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 6px #0003;
+}
+
+table>tbody>tr {
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+table>tbody>tr:nth-child(even) {
+    background-color: rgb(238, 238, 238);
+}
+table>tbody>tr:hover{
+    filter: drop-shadow(0px 2px 6px #0002);
+}
+.h1{
+    text-align: center;
+
+}
+
+.tabletop {
+	background-color:#00bcd4;
+	color: black;
+}
+
+
+
+.cricphoto {
+	border-radius: 20px;
+}
+.cricphoto:hover {
+	transform:scale(1.08) ;
+}
+
+.column2 {
+	width: 30%;
+}

@@ -1,0 +1,36 @@
+::-webkit-scrollbar {display: none;}
+
+
+.sitemap{
+    margin: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.sitemap .btnLink:hover{
+    opacity:0.7;
+    transform: scale(1.01);
+
+}
+
+.editpage {
+    position: absolute;
+    text-align-last: right;
+    right: 3%;
+    top: 4vh;
+    margin-top: 1200px;
+  }
+  
+  .editpage img{
+    position: relative;
+    margin: 0px;
+    text-align-last: right;
+    right: 1%;
+    border-radius: 30px;
+  }
+  
+  
+  .editpage img:hover {
+    opacity: 0.7;
+  }

@@ -1,0 +1,26 @@
+body{color: aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.box{background-color: #05595B;
+    display: inline-block;
+    width: 30%;
+    margin: 2%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.title{font-size: 60px;
+       margin: 5%;
+       color: #E2D784;
+       text-shadow: 3px 3px 3px beige;
+}
+
+p{font-family: inherit;
+   color: whitesmoke;
+   font-size: 30px;
+   text-align: center;
+}

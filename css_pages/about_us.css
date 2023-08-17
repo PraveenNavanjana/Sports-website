@@ -1,0 +1,94 @@
+::-webkit-scrollbar {display: none;}
+ 
+body{
+	overflow-x: hidden;
+    background-color: #28282B;
+	font-family: 'Poppins', sans-serif;
+}	
+h1{font-size:25px;
+   color:rgb(32, 31, 31);}
+
+#studentHeading{
+	color:#ffff;
+	font-size:50px;
+	text-align: center;
+}
+.studentBox {
+	margin-left:40px;
+	width: 300px;
+	height: 350px;
+	padding:10px;
+	border-radius:20px;
+	border: 6px solid black;	
+}
+.studentNum{
+	text-align:center;
+	font-size:25px;
+	font-weight:bold;	
+	border-color:#b1aeae;
+	border-radius:none;
+	width:130px;
+}
+.imgArea {
+   position: relative;
+   width: 300px;
+   height: 350px;
+   border-radius:20px;
+}
+.studentLayer {
+	width: 0px;
+    height: 350px;
+    background: rgba(0,0,0, 0.5);
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    transition: 0.7s ease;
+	border-radius:15px;
+}
+.studentDesc {
+	
+	transition: .2s;
+	overflow:hidden;
+	width:300px;
+	font-size:20px;
+	background-color:rgba(178,190,181, 0.5);	
+}
+.imgArea:hover .studentLayer{
+	width:300px;
+}	
+p {
+	color: white;
+	font-size: 25px;
+}
+img{
+	border-radius:15px;
+}
+
+#students{
+	margin-top:70px;
+	display:grid;
+	grid-template-columns:auto auto auto auto;
+}
+.studentPhoto{
+	height:350px;
+	width:300px;
+}
+.editpage {
+    position: relative;
+    text-align-last: right;
+    right: 3%;
+    top: 3vh;
+    margin-top: 10px;
+  }
+  
+.editpage img{
+    position: relative;
+    margin: 0px;
+    text-align-last: right;
+    right: 1%;
+  }
+  
+  
+.editpage img:hover {
+    opacity: 0.7;
+  }

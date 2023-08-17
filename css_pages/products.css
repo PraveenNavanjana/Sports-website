@@ -1,0 +1,470 @@
+#store-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    background-color: #03045E;
+    width: 500px;
+    margin: 0px auto 100px auto;
+    color: white;
+    padding: 20px 100px;
+    border-radius: 10px 10px;
+    border: 5px white solid;
+}
+
+body{color: aliceblue;
+    text-align: center;
+    margin-top: 0;
+    max-width: 100%; 
+    height:auto;
+    font-family: Arial, Helvetica, sans-serif;
+     background-image: url("../images/back.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+}
+
+h1{margin: 30px;
+   color:black;
+   text-align: center;
+}
+
+#total{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    margin: 0;
+    padding: 20px;
+    font-size: 25px;
+    background-color: #03045E;
+    border-radius: 0 10px 10px 0;
+}
+
+.box{background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin: 10% auto 5% auto;
+    width: 1100px;
+    border-radius: 0px 25px 25px 25px;
+    filter: drop-shadow(2px 5px 20px rgba(0,0,0.3)  );
+}
+
+.product-container{width: 90%;
+                   height: 400px;
+                   text-align: center;
+                   margin: 20px auto;
+                   background-color: darkturquoise;
+                   border-radius: 20px;
+                   box-shadow: 10px 10px 20px white;
+}
+
+.header{margin: auto;
+        width: 90%;
+        height: 10%;
+        align-items:center;
+}
+
+.heading{color: black;
+         display: inline-block;
+}
+
+.removeall{color: red;
+           display: inline-block;
+}
+
+.card-title{text-align: left;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 30px;
+            background-color:#C5CAE9;
+            padding: 20px 35px;
+            margin: 0% 3% 3% 0%;
+            width: 25%;
+            border-radius: 0px 15px 15px 0px;
+}
+
+.address .box-size{margin: 0px 30px;
+                   padding: 15px;
+                   width: 80%;
+                   border-radius: 10px;
+                   font-family: 'Comic Neue', cursive;
+                   font-size: 18px;
+}
+
+form{text-align: left;
+}
+
+label{font-family: 'Poppins', sans-serif;
+     font-size: 20px;
+     padding: 2%;
+     margin-left: 8px;
+     color: black;
+}
+
+.radio-txt{font-family: 'Open Sans', sans-serif;
+}
+
+.box-size{padding: 15px;
+          width: 40%;
+          margin: 10px 30px;
+          border-radius: 10px;
+          font-family: 'Comic Neue', cursive;
+          font-size: 18px;
+}
+
+.radio1,.radio2{padding: 15px;
+                width: 30%;
+                border-radius: 10px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 15px;
+                background-color: #F5F5F5;
+                display: inline-block;
+}
+
+.radio1{margin: 30px 30px;
+}
+
+.radio2{margin: 11px 11px 11px 195px;
+}
+
+p{margin-left: 30px;
+  padding: 0% 2%;
+}
+
+.delivery-txt{margin-left: 8px;
+              font-family: 'Poppins', sans-serif;
+              font-size: 20px;
+}
+
+.bank input{padding: 15px;
+            border-radius: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+}
+
+.period{color: #9EA1A4;
+    font-size: 18px;
+}
+
+.to{margin-left: 520px;
+}
+
+textarea{width: 90%;
+         height: 200px;
+         padding: 25px;
+         margin: 10px 30px;
+         border-color: black;
+         border-width: 2px;
+         border-radius: 20px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 15px;
+}
+
+#bank label{margin: 11px 10px;
+            font-family: 'Poppins', sans-serif;
+}
+
+#accnum{margin: 10px 30px;
+}
+
+#cvv{float: right;
+     margin: 10px 70px;
+}
+
+#expiry{margin-left: 100px;
+}
+
+#bank label:nth-child(2){margin-left: 290px;
+} 
+
+#bank label:nth-child(3){margin-left: 200px;
+} 
+
+.bank input:nth-child(1){width: 350px;
+}
+
+#to, #from{width: 250px;
+}
+
+#from{margin-right: 300px;
+}
+
+#hrmargin{margin: 0% 3%;
+}
+
+.indent{margin-left: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+}
+
+.warning{background-color: #FFCC00;
+         margin-left: 40px ;
+         padding: 15px;
+         width: 90%;
+         border-radius: 10px;
+         font-family: 'Open Sans', sans-serif;
+         font-size: 25px;
+}
+
+.conditions{margin-left: 13px;
+            font-family: 'Open Sans', sans-serif;
+            color: #616161;
+            line-height: 35px;
+}
+
+.warning i{color: #F24E1E;
+           background-color: white;
+           padding: 15px;
+           border-radius: 8px;
+           font-size: 35px;
+           float: left;
+           margin-right: 35px;
+}
+
+#terms{width: 20px;
+       height: 20px;
+       border-radius: 10px;
+       accent-color: blue;
+}
+
+#policy{padding: 0;
+        margin: 0;
+        font-size: 19px;
+}
+
+#button-row{text-align: center;
+}
+
+.btn{padding: 15px;
+     margin: 50px;
+     border: none;
+     border-radius: 30px;
+     background-color: #039487;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+     color: white;
+     width: 350px;
+     font-size: 25px;
+     font-weight: bold;
+     cursor: pointer;
+}
+
+.down{padding-left: 40px;
+      padding-top: 80px;
+      padding-bottom: 40px;
+}
+
+
+
+/* ------------------------------------------------------------- */
+
+
+.product-card{background-color: #CAF0F8;
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+              padding: 15px;
+              border-radius: 10px;
+              width: 500px;
+              display: inline-block;
+              margin: 15px;
+}
+
+.top{background-color: white;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+    padding: 15px;
+    text-align: left;
+}
+
+.top img{width: 100%;
+         height: 300px;
+         object-fit: cover;
+         object-position: bottom;
+}
+
+.top .product-title{font-family: 'Roboto Slab', serif;
+                    background-color: #03045E;
+                    color: white;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin: 20px 0;
+}
+
+.top p{font-family: 'Open Sans', sans-serif;
+       margin: 0;
+       line-height: 23px;
+       color: black;
+}
+
+.bottom{background-color: white;
+        border-radius: 0 0 10px 10px;
+        padding: 15px;
+        text-align: left;
+        color: black;
+}
+
+.card-button{border: none;
+            background-color: #90CAF9;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 5px 0;
+            width: 60px;
+            margin: 0;
+            display: inline-block;
+            text-align: center;
+}
+
+.quantity{font-family: 'Copse', serif;
+          padding-top: 8px;
+}
+
+.card-button.plus{font-family: 'Roboto Slab', serif;
+                  border-radius: 15px 0 0 15px;
+                  cursor: pointer;
+}
+
+.card-button.minus{font-family: 'Roboto Slab', serif;
+                   border-radius: 0 15px 15px 0;
+                   cursor: pointer;
+}
+
+.cost{font-family: 'Copse', serif;
+      display: inline-block;
+      font-size: 25px;
+      float: right;
+      margin: 5px 0;
+}
+
+#summery{font-family: 'Poppins', sans-serif;
+         width: 1100px;
+         background-color: #F1F2F8;
+         position: absolute;
+         left:50%;
+         transform: translateX(-50%);
+         border-radius: 30px;
+         text-align: center; 
+         padding: 0 30px 30px 30px;
+         display: none;
+}
+
+#summery #summery-title{color: white;
+                        font-family: 'Ubuntu', sans-serif;
+                        font-size: 30px;
+                        padding: 20px;
+                        background-color:#03045E;
+                        border-radius: 0px 0px 20px 20px;
+                        margin: 0% 200px;
+}
+
+#summery-img{width: 300px;
+             margin: 0;
+}
+
+#summery input{padding: 10px;
+               width: 30%;
+               border-radius: 10px;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               font-size: 15px;
+}
+
+#summery form{text-align: left;
+}
+
+#invoice-title{text-align: left;
+               font-family: 'Ubuntu', sans-serif;
+               margin: 70px 0 0 0;
+               padding: 0;
+               color: black;
+               font-size: 30px;
+}
+
+.summeryitem{padding: 30px;
+            display: none;
+}
+
+.summery-img{width: 152px;
+            height: 152px;
+            border-radius: 10px;
+            object-fit: cover;
+            float: left;
+}
+
+.detail-card{width: 300px;
+            background-color: #C5CAE9;
+            border-radius: 10px;
+            margin-left: 160px;
+            text-align: left;
+            padding: 10px;
+}
+
+.item-name{background-color: black;
+          border-radius: 6px;
+          margin: 0;
+          display: inline-block;
+          padding: 8px;
+          font-size: 20px;
+}
+
+.product-info{margin-top: 10px;
+            background-color: #7988E0;
+            border-radius: 6px;
+            padding: 8px;
+            color: white;
+}
+
+.summeryquantity{margin: 0;
+}
+
+.summerycost{margin: 10px 0 0 0;
+}
+
+#total-bill{background-color: #03045E;
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 100px auto 20px auto;
+}
+
+#bill, #summery-total{font-family: 'Copse', serif;
+                      display: inline-block;
+                      font-size: 22px;
+                      margin: 0;
+}
+
+#summery-total{background-color: white;
+              color: #03045E;
+              padding: 15px;
+              border-radius: 0 10px 10px 0;
+              margin: 0 0 0 50px;
+}
+
+#hidesubmit:disabled{background-color: #9EA1A4;
+                    cursor: auto;
+}
+
+.summery-txt{font-family: 'Poppins', sans-serif;
+}
+
+li{color: black;
+   line-height: 25px;
+}
+
+.editpage {
+    position: absolute;
+    text-align-last: right;
+    right: 3%;
+    top: 4vh;
+    margin-top: 4500px;
+  }
+  
+.editpage img{
+    position: relative;
+    margin: 0px;
+    text-align-last: right;
+    right: 1%;
+    border-radius: 30px;
+  }
+  
+  
+.editpage img:hover {
+    opacity: 0.7;
+  }

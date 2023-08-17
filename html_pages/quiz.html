@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css_pages/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <!--Multiple-choice quiz-->
+    <div id="home-area" class='start-question-box'>
+        <h3>Welcome to the Quiz</h3><!--guidelines of the quize -->
+        <br>
+        <p>Total number of questions:<span class='total-questions'>10</span></p>
+        <p>You have only 60 sec to think.</p>
+        <p>The time will start after you press the start button</p>
+        <p>Good Luck</p>
+        <button type='button' class='btn' onclick="showQuestions()">Start</button>
+    </div>
+    <!--10 questions included-->
+    <div id="questions-area" hidden>
+        <!--question 1-->
+        <div class='question-box' > 
+            
+            <p class='question-number'>Question 1 </p>
+            <p class='question'>01.Which year was Sri Lankan first Asian Cup victory away from home?</p>
+            <input type="radio" class='answer' name="answer1" value="0">1986<br>
+            <input type="radio" class='answer' name="answer1" value="1">2001<br>
+            <input type="radio" class='answer' name="answer1" value="2">2013<br>
+            <input type="radio" class='answer' name="answer1" value="3">2008<br>
+        </div>
+        <!--question 2-->
+        <div class='question-box'>
+            <p class='question-number'>Question 2 </p>
+            <p class='question'>02.Which Sri Lanka won player of the series award in the 1996 ICC world cup?</p>
+            <input type="radio" class='answer' name="answer2" value="0">Chaminda Vas<br>
+            <input type="radio" class='answer' name="answer2" value="1">Aravinda silva<br>
+            <input type="radio" class='answer' name="answer2" value="2">Sanath Jayasuriya<br>
+            <input type="radio" class='answer' name="answer2" value="3">Muttiah Muralidharan<br>
+        </div>
+        <!--question 3-->
+        <div class='question-box'>
+            <p class='question-number'>Question 3 </p>
+            <p class='question'>03.Who was sri lankan first test captain?</p>
+            <input type="radio" class='answer' name="answer3" value="0">Chaminda vas<br>
+            <input type="radio" class='answer' name="answer3" value="1">Bandula warnapura<br>
+            <input type="radio" class='answer' name="answer3" value="2">Sanath Jayasuriya<br>
+            <input type="radio" class='answer' name="answer3" value="3">Muttiah Muralidharan<br>
+        </div>
+        <!--question 4-->
+        <div class='question-box'>
+            <p class='question-number'>Question 4 </p>
+            <p class='question'>04.Who was the first Sri Lankan bowler to take a test hat-trick?</p>
+            <input type="radio" class='answer' name="answer4" value="0">Chaminda vas<br>
+            <input type="radio" class='answer' name="answer4" value="1">Nuwan Zoysa<br>
+            <input type="radio" class='answer' name="answer4" value="2">Sanath jayasuriya<br>
+            <input type="radio" class='answer' name="answer4" value="3">Muttiah Muralidharan<br>
+        </div>
+        <!--question 5-->
+        <div class='question-box'>
+            <p class='question-number'>Question 5 </p>
+            <p class='question'>05.Which Sri Lankan family produced three test-playing brothers?</p>
+            <input type="radio" class='answer' name="answer5" value="0">De silva<br>
+            <input type="radio" class='answer' name="answer5" value="1">Ranatunga<br>
+            <input type="radio" class='answer' name="answer5" value="2">Jayasuriya<br>
+            <input type="radio" class='answer' name="answer5" value="3">Jayawardhana<br>
+        </div>
+        <!--question 6-->
+        <div class='question-box'>
+            <p class='question-number'>Question 6 </p>
+            <p class='question'>06.What is the oldest cricket club in Sri Lanka?</p>
+            <input type="radio" class='answer' name="answer6" value="0">Galle cricket club<br>
+            <input type="radio" class='answer' name="answer6" value="1">Colombo cricket club<br>
+            <input type="radio" class='answer' name="answer6" value="2">bloomfield cricket club<br>
+            <input type="radio" class='answer' name="answer6" value="3">Sinhalese Sports club<br>
+        </div>
+        <!--question 7-->
+        <div class='question-box'>
+            <p class='question-number'>Question 7 </p>
+            <p class='question'>07.Sri Lankan first official international match was played in 1975.</p>
+            <input type="radio" class='answer' name="answer7" value="0">True<br>
+            <input type="radio" class='answer' name="answer7" value="1">False<br>
+        </div>
+        <!--question 8-->
+        <div class='question-box'>
+            <p class='question-number'>Question 8 </p>
+            <p class='question'>08.Which Sri Lankan cricketer captained the team the most times?</p>
+            <input type="radio" class='answer' name="answer8" value="0">Mahela Jayawardana<br>
+            <input type="radio" class='answer' name="answer8" value="1">Arjuna Ranathunga<br>
+            <input type="radio" class='answer' name="answer8" value="2">Thilakaratne Dilshan<br>
+            <input type="radio" class='answer' name="answer8" value="3">Sanath Jayasuriya<br>
+        </div>
+        <!--question 9-->
+        <div class='question-box'>
+            <p class='question-number'>Question 9 </p>
+            <p class='question'>09.Which player scored Sri Lankan first T20I century?</p>
+            <input type="radio" class='answer' name="answer9" value="0">Mahela Jayawardana<br>
+            <input type="radio" class='answer' name="answer9" value="1">Arjuna Ranathunga<br>
+            <input type="radio" class='answer' name="answer9" value="2">Thilakaratne Dilshan<br>
+            <input type="radio" class='answer' name="answer9" value="3">Sanath Jayasuriya<br>
+        </div>
+        <!--question 10-->
+        <div class='question-box'>
+            <p class='question-number'>Question 10 </p>
+            <p class='question'>10.who scored Sri Lankan first test century?</p>
+            <input type="radio" class='answer' name="answer10" value="0">Duleep Mendis<br>
+            <input type="radio" class='answer' name="answer10" value="1">Ranjan Madugalla<br>
+            <input type="radio" class='answer' name="answer10" value="2">Sidath Wettimuny<br>
+            <input type="radio" class='answer' name="answer10" value="3">Sanath Jayasuriya<br>
+        </div>
+
+        <div class="question-box">
+            <button type="button" class="btn" id="toTop" onclick="goToTop()">Back to Top</button>
+            <button type="submit" class="btn" onclick="showResults()">Submit</button>
+        </div>
+    </div>
+    <!-- Results Area-->
+    <div id="results-area" class='results-box' hidden>
+        <h1 class='results'>Results</h1>
+        <p class='total' id='total'></p>
+        <table>
+            <tr>
+                <th>Question Number</th>
+                <th>Correct Answer</th>
+                <th>Your Answer</th>
+            </tr>
+            <tr>
+                <td>Question 01</td>
+                <td>3</td>
+                <td id="q1"></td>
+            </tr>
+            <tr>
+                <td>Question 02</td>
+                <td>2</td>
+                <td id="q2"></td>
+            </tr>
+            <tr>
+                <td>Question 03</td>
+                <td>1</td>
+                <td id="q3"></td>
+            </tr>
+            <tr>
+                <td>Question 04</td>
+                <td>2</td>
+                <td id="q4"></td>
+            </tr>
+            <tr>
+                <td>Question 05</td>
+                <td>1</td>
+                <td id="q5"></td>
+            </tr>
+            <tr>
+                <td>Question 06</td>
+                <td>1</td>
+                <td id="q6"></td>
+            </tr>
+            <tr>
+                <td>Question 07</td>
+                <td>0</td>
+                <td id="q7"></td>
+            </tr>
+            <tr>
+                <td>Question 08</td>
+                <td>1</td>
+                <td id="q8"></td>
+            </tr>
+            <tr>
+                <td>Question 09</td>
+                <td>0</td>
+                <td id="q9"></td>
+            </tr>
+            <tr>
+                <td>Question 10</td>
+                <td>1</td>
+                <td id="q10"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="editpage">
+        <a href="Maduri.html"><img src="../photos/About_us/editor.jpg"alt="Page editor icon" width="125px" height="125px"></a>
+    </div>
+    
+
+    <script>
+
+        function getRadioValue(radioArray) {
+            var i;
+            for(i=0; i<radioArray.length; i++) {
+                if(radioArray[i].checked) {
+                    return radioArray[i].value;
+                }
+            }
+            return -1;
+        }
+
+        function timer() {
+            var setTimer = setInterval(showResults, 60000);
+        }
+
+        function goToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function reviewAnswers() {
+            var homeBox = document.getElementById("home-area").hidden = true;
+            var questionBox = document.getElementById("questions-area").hidden = false;
+            var resultsBox = document.getElementById("results-area").hidden = true;
+            document.body.style.backgroundColor = "#63656a";
+        }
+
+        function showQuestions() {
+            var homeBox = document.getElementById("home-area").hidden = true;
+            var questionBox = document.getElementById("questions-area").hidden = false;
+            var resultsBox = document.getElementById("results-area").hidden = true;
+
+            timer();
+        }
+
+        function showResults () {
+            var homeBox = document.getElementById("home-area").hidden = true;
+            var questionBox = document.getElementById("questions-area").hidden = true;
+            var resultsBox = document.getElementById("results-area").hidden = false;
+
+            var selectedAnswers = [];
+            for(let j = 0; j < 10; j++) {
+                var name = "answer" + (j+1);
+                var allAnswers = [];
+                allAnswers = document.getElementsByName(name);
+
+                var selectedAnswer = getRadioValue(allAnswers);
+                selectedAnswers[j] = selectedAnswer;
+            }
+
+            let score = 0;
+            const correctAnswers = [3,2,1,2,1,1,0,1,0,1];
+            for(let i = 0; i < selectedAnswers.length; i++) {
+                var id = "q" + (i+1);
+                if(selectedAnswers[i] == correctAnswers[i]) {
+                    score += 2;
+                    document.getElementById(id).innerHTML = "correct";
+                } else {
+                    score -= 1;
+                    document.getElementById(id).innerHTML = "incorrect";
+                }
+            }
+
+            document.getElementById("total").innerHTML = "Your score is " + score;
+
+            document.body.style.backgroundColor = "yellow";
+
+            if(score <= 4) {
+                document.body.style.backgroundColor = "#ff0000";
+            } else if(score > 16){
+                document.body.style.backgroundColor = "#00ff00";
+            }
+        }
+    </script>
+</body>
+
+</html>
